@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Intro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .btnStyle {
+            background-color: lightgreen;
+        }
+        img {
+            border-radius: 5px;
+            opacity: 0;
+        }
+        .imgDiv {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function changeColor(){
+            var heading = document.getElementById('heading');
+            var btn1 = document.getElementById('btn1');
+
+            if (heading.style.color == 'black') {
+                heading.style.color = 'brown';
+                btn1.textContent = "Undo Change";
+                btn1.style.backgroundColor = "red";
+            } else {
+                heading.style.color = 'black';
+                btn1.textContent = "Change Heading Color";
+                btn1.style.backgroundColor = "lightgreen";    
+            }
+        }
+
+        function displayImage(){
+            var img1 = document.getElementById('img1');
+            var btn2 = document.getElementById('btn2');
+
+            if (img1.style.opacity == "0") {
+                img1.style.opacity = "1";
+                btn2.textContent = "Hide Image";
+                btn2.style.backgroundColor = "red";
+                console.log('inside if');
+            } else {
+                img1.style.opacity = "0";   
+                btn2.textContent = "Display Hidden Image";
+                btn2.style.backgroundColor = "lightgreen";
+                console.log('inside else');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 class="text-center" style="color: black;" id="heading">JS Intro</h1>
+    <div class="text-center">
+        <button class="btn p-3 m-3 btnStyle" onclick="changeColor()" id="btn1">Change Heading Color</button>
+    </div>
+    <div class="text-center imgDiv mx-4">
+        <button class="btn p-3 m-3 btnStyle" onclick="displayImage()" id="btn2" >Display Hidden Image</button>
+        <img src="img/nature_img.jpg" alt="nature_img" id="img1" class="my-4" style="opacity: 0;">
+    </div>
+</body>
+</html>
