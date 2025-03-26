@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Intro</title>
+    <title>JS Basics</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         h1 {
             color: red;
+            font-size: 24px;
         }
     </style>
     <script>
@@ -15,9 +16,15 @@
             var heading = document.getElementById('heading');
 
             if (heading.style.color == 'red') {
-                heading.style.color = 'brown';
-            } else {
+                heading.style.color = 'green';
+            } else {    
                 heading.style.color = 'red'; 
+            }
+
+            if (heading.style.fontSize == '24px') {
+                heading.style.fontSize = '12px';
+            } else {    
+                heading.style.fontSize = '24px'; 
             }
         }
     </script>
@@ -25,7 +32,7 @@
 <body>
     <h1 class="text-center" id="heading">JS Intro</h1>
     <div class="text-center">
-        <button class="btn p-3 m-3 btnStyle" onclick="changeColor()" id="btn1">Change Heading Color</button>
+        <button onclick="changeColor()">Change Heading Color</button>
     </div>
 </body>
 </html>
