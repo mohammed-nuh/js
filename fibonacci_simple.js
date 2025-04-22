@@ -1,6 +1,6 @@
 let num = 10;
 
-let no1 = 1;
+let no1 = 0;
 let no2 = 1;
 
 console.log("Fibonacci Series: ");

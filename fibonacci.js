@@ -3,7 +3,7 @@ let fibonacciArray = [];
 
 for (let i = 0; i < num; i++) {
     if (i == 0 || i == 1) {
-        fibonacciArray.push(1);
+        fibonacciArray.push(i);
     } else {
         fibonacciArray.push(fibonacciArray[i-1] + fibonacciArray[i-2]);
     }
