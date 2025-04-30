@@ -2,7 +2,7 @@ let getFibonacciSeries = n => {
     let fibSeries = [];
     for (let i = 0; i < n; i++) {
         if (i == 0 || i == 1) {
-            fibSeries.push(1); 
+            fibSeries.push(i); 
         } else {
             fibSeries.push(fibSeries[i-2] + fibSeries[i-1]);
         }
