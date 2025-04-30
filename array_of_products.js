@@ -23,5 +23,5 @@ let product3 = new Product("Asus Monitor", 10000, "some dummy description", 15);
 let product4 = new Product("Apple Vision Pro", 200000, "some dummy description", 2);
 productArray.push(product1, product2, product3, product4);
 
-productArray.forEach(product => product.quantity >= 10 ? product.price *= 0.8 : product.price *= 1);
+productArray.forEach(product => product.quantity >= 10 ? product.price *= 0.8 : null);
 productArray.forEach(product => product.display());

@@ -32,3 +32,4 @@ console.log(`Average Price of Cars => Rs.${Math.round(averagePrice)}`);
 let RenaultCarObjects = carArray.filter(carObject => carObject.brand == 'Renault');
 let RenaultCars = RenaultCarObjects.map(car => car.model);
 console.log(`Cars with brand Renault => ${RenaultCars}`);
+
